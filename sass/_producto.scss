@@ -1,0 +1,35 @@
+/* PRODUCTO */
+
+.coleccion-titulo {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+}
+.coleccion-titulo h1 {
+    font-size: 30px;
+    border-bottom: solid 1px $negro;
+}
+
+
+
+/* ..bootstrap.. */
+
+
+.columnas-bootstrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 100px;
+    justify-items: center;
+
+    .card-title {
+        font-weight: 700;
+        font-size: 23px;
+    }
+
+}
+
+/* FINN */
+

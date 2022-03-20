@@ -1,0 +1,50 @@
+/* Reseteo y fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*GRID AREA*/
+
+#grid-area {
+    display: grid;
+    grid-template-areas:
+        "cabeza"
+        "cuerpo"
+        "pie";
+
+    grid-template-rows: auto auto auto;
+
+}
+
+header {
+    grid-area: cabeza;
+
+}
+
+main {
+    grid-area: cuerpo;
+
+}
+
+footer {
+    grid-area: pie;
+
+
+}
+
+@import "variable";
+
+@import "header";
+@import "index";
+@import "quienes-somos";
+@import "producto";
+@import "talles";
+@import "contacto";
+@import "footer";
+@import "media-queris-desktop"
+

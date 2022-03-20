@@ -1,0 +1,86 @@
+/* CONTACTO */
+
+#overlay {
+    background-image: url(../img/quienes-somos.jpg);
+    align-items: center;
+    background-size: cover;
+    z-index: -1;
+    margin: 7px;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    padding-bottom: 100px;
+
+    form {
+        width: 98%;
+        background: $blanco;
+        padding: 40px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: $negro;
+
+        .border-botton {
+            border-bottom: solid 0.5px black;
+        }
+
+        .black {
+            display: flex;
+            color: $negro;
+            font-weight: 800;
+        }
+
+        label {
+            display: block;
+            margin: 20px 0;
+            color: $negro;
+        }
+
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            outline: none;
+            resize: none;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            border-bottom: 1px solid $negro;
+
+            textarea::-webkit-scrollbar {
+                width: 4px;
+            }
+            textarea::-webkit-scrollbar-thumb {
+                background-color: $negro;
+            }
+        }
+
+        .center {
+            text-align: center;
+
+            input[type="submit"] {
+                margin-top: 30px;
+                width: 90%;
+                max-width: 200px;
+                color: $blanco;
+                background: $negro;
+                cursor: pointer;
+            }
+        }
+    }
+
+    form,
+    h2 {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* FIN */

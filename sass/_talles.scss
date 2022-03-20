@@ -1,0 +1,42 @@
+/* TALLES */
+
+#grid-talles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+    .grid-question {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        border-bottom: solid 1px rgb(170, 168, 168);
+    }
+
+    .grid-question h1 {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin: 25px;
+        font-size: 50px;
+    }
+
+    .grid-desarrollo {
+        margin: 15px;
+        
+    }
+    
+    .grid-desarollo,
+    ol,
+    li {
+        font-size: 19px;
+    }
+    
+    .grid-desarollo,
+    h3 {
+        font-size: 23px;
+    }
+
+}
+
+/* FINN */
