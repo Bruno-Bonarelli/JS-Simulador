@@ -1,6 +1,6 @@
 function comprar () {
 
-    let productoElegido = prompt ('Ingrese el nombre de modelo de anillo que quiere agregar al carrito, si quiere salir en cualquier momento escriba: salir')
+    let productoElegido = prompt ('Ingrese el nombre de modelo de anillo que quiere agregar al carrito. Si quiere salir en cualquier momento escriba: salir')
     
     let total = 0;
     
