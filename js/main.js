@@ -21,7 +21,7 @@ let anilloElegido = prompt("Introduzca el nombre del anillo");
 let precio;
 
 while (anilloElegido != "salir") {
-    let anillo = anillos.find((el) => el.nombre === anilloElegido)
+    let anillo = anillos.find((producto) => producto.nombre === anilloElegido)
     if(anillo) {
         precioTotal += anillo.precio;
     } else {
