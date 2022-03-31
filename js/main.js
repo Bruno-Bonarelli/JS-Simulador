@@ -12,11 +12,59 @@ const anillo4 = new Anillo ("block", 690)
 const anillo5 = new Anillo ("circular", 800)
 const anillo6 = new Anillo ("voronoi", 710)
 
-console.log (anillo1)
-
 const anillos = [anillo1, anillo2, anillo3, anillo4, anillo5, anillo6];
 
-function devolverPrecio (anilloElegido) {
+let precioTotal = 0;
+
+let anilloElegido = prompt("Introduzca el nombre del anillo");
+
+let precio;
+
+while (anilloElegido != "salir") {
+    let anillo = anillos.find((el) => el.nombre === anilloElegido)
+    if(anillo) {
+        precioTotal += anillo.precio;
+    } else {
+        alert("El anillo no existe")
+    }
+    alert ("$"+ precioTotal)
+
+    anilloElegido = prompt("Introduzca el nombre del anillo que que quiera agregar al carrito. Para abandonar escriba: salir");
+}
+
+alert ("$" + precioTotal);
+
+
+
+
+
+
+
+/* let este = anillos.some((x)=> x.nombre.indexOf (anilloElegido)!==-1); */
+
+
+
+
+
+
+
+/* console.log (devolverProducto)
+let precio;
+let precioTotal= 0; */
+
+/* while (anilloElegido != "salir"){
+    precio= devolverPrecio.precio;
+    if (precio!=-1){
+        precioTotal+= precio;
+    }
+
+} */
+
+
+
+
+
+/* function devolverPrecio (anilloElegido) {
     for (let i = 0; i < anillos.length; i++) {
         if(anillos[i].nombre == anilloElegido) {
             return anillos[i].precio;
@@ -25,25 +73,11 @@ function devolverPrecio (anilloElegido) {
             return -1
         }
     }
-}
+} */
 
-let precioTotal = 0;
 
-let anilloElegido = prompt ("Introduzca el nombre del anillo");
-
-let precio;
-
-while (anilloElegido != "salir") {
-    precio = devolverPrecio(anilloElegido);
-    if (precio!= -1) {
-        precioTotal += precio;
+/* let precioDelAnillo = anillos.find((producto)=>{
+    if (producto.nombre===anilloElegido){
+        precio=producto.precio
     }
-    else {
-        alert ("No existe ese anillo")
-    }
-    alert ("$" + precioTotal);
-    anilloElegido = prompt ("Introduzca el nombre del anillo");
-}
-
-alert ("$" + precioTotal);
-
+}) */
