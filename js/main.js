@@ -39,9 +39,6 @@ function Init(){
                             <p>  Precio: $${anillos.precio}</p>`;
 } */
 
-
-
-
 /* let precioTotal = 0;
 
 let anilloElegido = prompt("Introduzca el nombre del anillo");
