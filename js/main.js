@@ -1,4 +1,60 @@
-class Anillo {
+function Init(){
+    carritoDeCompras()
+}
+
+function carritoDeCompras(){
+    const buyBtnInfine = document.querySelector("#buyButtonInfine");
+    buyBtnInfine.addEventListener("click", ()=>{
+
+        const buyAlertInfine = document.querySelector("#alertCarritoInfine");
+        buyAlertInfine.innerHTML += `<br><small>✓ "Infine" agregado al carrito</small>`;
+    })
+
+    const buyBtnAmon = document.querySelector("#buyButtonAmon");
+    buyBtnAmon.addEventListener("click", ()=>{
+
+        const buyAlertAmon = document.querySelector("#alertCarritoAmon");
+        buyAlertAmon.innerHTML += `<br><small>✓ "Amón" agregado al carrito</small>`;
+    })
+
+    const buyBtnWaves = document.querySelector("#buyButtonWaves");
+    buyBtnWaves.addEventListener("click", ()=>{
+
+        const buyAlertWaves = document.querySelector("#alertCarritoWaves");
+        buyAlertWaves.innerHTML += `<br><small>✓ "Waves" agregado al carrito</small>`;
+    })
+
+    const buyBtnBlock = document.querySelector("#buyButtonBlock");
+    buyBtnBlock.addEventListener("click", ()=>{
+
+        const buyAlertBlock = document.querySelector("#alertCarritoBlock");
+        buyAlertBlock.innerHTML += `<br><small>✓ "Block" agregado al carrito</small>`;
+    })
+
+    const buyBtnCircular = document.querySelector("#buyButtonCircular");
+    buyBtnCircular.addEventListener("click", ()=>{
+
+        const buyAlertCircular = document.querySelector("#alertCarritoCircular");
+        buyAlertCircular.innerHTML += `<br><small>✓ "Ciruclar" agregado al carrito</small>`;
+    })
+
+    const buyBtnVoronoi = document.querySelector("#buyButtonVoronoi");
+    buyBtnVoronoi.addEventListener("click", ()=>{
+
+        const buyAlertVoronoi = document.querySelector("#alertCarritoVoronoi");
+        buyAlertVoronoi.innerHTML += `<br><small>✓ "Voronoi" agregado al carrito</small>`;
+    })
+}
+
+
+
+
+
+
+
+
+//CODIGO VIEJO
+/* class Anillo {
     constructor (nombre, precio) {
         this.nombre = nombre;
         this.precio = precio;
@@ -14,32 +70,7 @@ const anillo6 = new Anillo ("voronoi", 710)
 
 const anillos = [anillo1, anillo2, anillo3, anillo4, anillo5, anillo6];
 
-function Init(){
-    let nombre = prompt("Ingrese su nombre");
-    let apellido = prompt("Ingrese su apellido");
-    const miTitulo = document.getElementById("titulo");
-    miTitulo.innerText = `Bienvenido ${nombre} ${apellido}, estos son los precios:`;
-
-    const contenedor = document.getElementById("divContenedor")
-
-    const miUl = document.createElement("ul");
-    
-    anillos.forEach((anillo)=>{
-        miUl.innerHTML += `<li> Nombre: ${anillo.nombre}<br>
-                           Precio: $${anillo.precio}`
-    });
-
-    contenedor.appendChild(miUl)
-    
-}
-
-/* for (const anillo of anillos) {
-    let contenedor = document.createElement("div")
-    contenedor.innerHTML = `<h3> Anillo: ${anillos.nombre}</h3>
-                            <p>  Precio: $${anillos.precio}</p>`;
-} */
-
-/* let precioTotal = 0;
+let precioTotal = 0;
 
 let anilloElegido = prompt("Introduzca el nombre del anillo");
 
