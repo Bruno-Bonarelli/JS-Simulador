@@ -23,6 +23,7 @@
     <meta name="keywords" content="joyas, diges, collares, artesanal">
     <meta name="description" content="Joyeria de autor, piezas unicas.">
 
+    <script src="../js/formulario.js"></script>
 
     <title>CHAWAR | Contacto</title>
 </head>
@@ -32,7 +33,7 @@
 <!-- Navegador -->
 
 
-<body id="grid-area">
+<body id="grid-area" onload="formularioInit()">
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
 
@@ -91,7 +92,7 @@
 
         <div class="container-contact" id="overlay">
 
-            <form class="scale-in-center">
+            <form class="scale-in-center" id="formulario">
 
                 <div class="border-botton">
                     <h2>Escribinos</h2>
@@ -102,19 +103,19 @@
 
                 <input type="text" id="name" placeholder="Tu nombre">
 
-                <small class="error"></small>
+                <small class="error" id="#errorNombre"></small>
 
                 <label class="black" for="email">Email:</label>
 
                 <input type="text" id="email" placeholder=" Tu Email">
 
-                <small class="error"></small>
+                <small class="error" id="errorEmail"></small>
 
                 <label class="black" for="message">Consulta:</label>
 
                 <textarea id="message" placeholder="Tu consulta" rows="6"></textarea>
 
-                <small class="error"></small>
+                <small class="error" id="errorConsulta"></small>
 
                 <div class="center">
 
