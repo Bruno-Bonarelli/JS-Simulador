@@ -11,7 +11,7 @@ function formularioInit(){
 
         if (nombre.value!=="" && email.value!=="" && consulta.value!==""){
             const checkFormulario = document.getElementById("succes")
-            checkFormulario.innerHTML= `<br><p style=color:green>✓ Enviado ¡Gracias por tu consulta!</p>`;
+            checkFormulario.innerHTML= `<br><p style=color:green>✓ Enviado ¡Gracias ${nombre.value} por tu consulta!</p>`;
 
         } else if (nombre.value==""){
             const errorNombre = document.getElementById("#errorNombre");

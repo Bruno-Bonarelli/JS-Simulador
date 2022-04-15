@@ -24,6 +24,8 @@
   <meta name="description" content="Joyeria de autor, piezas unicas.">
 
   <script src="../js/main.js"></script>
+  <script src="../js/claseCarrito.js"></script>
+  <script src="../js/productosData.js"></script>
 
 
   <title>CHAWAR | Productos</title>
@@ -104,6 +106,12 @@
     </div>
 
     <div id="divContenedor"></div>
+    <a href="#carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+      </svg> Ver carrito
+    </a>
 
     <!-- Tarjeta 1 INFINE -->
 
@@ -145,7 +153,7 @@
 
           <p class="card-text">Anillo en Bronce, con finalizacion armónica.</p>
 
-          <a class="btn btn-dark" target="_blank" id="buyButtonInfine">Agregar al carrito</a>
+          <a  class="btn btn-dark btnCarrito" target="_blank" id="buyButtonInfine">Agregar al carrito</a>
 
           <small id="alertCarritoInfine"></small>
 
@@ -193,7 +201,7 @@
 
           <p class="card-text">Anillo en Bronce, con detalles en bloques triangulares.</p>
 
-          <a class="btn btn-dark" target="_blank" id="buyButtonAmon">Agregar al carrito</a>
+          <a class="btn btn-dark btnCarrito" target="_blank" id="buyButtonAmon">Agregar al carrito</a>
 
           <small id="alertCarritoAmon"></small>
 
@@ -240,7 +248,7 @@
 
           <p class="card-text">Anillo en Plata 925, con los detalles en bajo relieve negros.</p>
 
-          <a class="btn btn-dark" target="_blank" id="buyButtonWaves">Agregar al carrito</a>
+          <a class="btn btn-dark btnCarrito" target="_blank" id="buyButtonWaves">Agregar al carrito</a>
 
           <small id="alertCarritoWaves"></small>
 
@@ -288,7 +296,7 @@
 
           <p class="card-text">Anillo en Bronce, con detalles en bloques cuadrados.</p>
 
-          <a class="btn btn-dark" target="_blank" id="buyButtonBlock">Agregar al carrito</a>
+          <a class="btn btn-dark btnCarrito" target="_blank" id="buyButtonBlock">Agregar al carrito</a>
 
           <small id="alertCarritoBlock"></small>
 
@@ -328,7 +336,7 @@
 
           <p class="card-text">Anillo en Plata 925, con forma geométrica circular.</p>
 
-          <a class="btn btn-dark" target="_blank" id="buyButtonCircular">Agregar al carrito</a>
+          <a class="btn btn-dark btnCarrito" target="_blank" id="buyButtonCircular">Agregar al carrito</a>
 
           <small id="alertCarritoCircular"></small>
 
@@ -376,7 +384,7 @@
 
           <p class="card-text">Anillo en Bronce, con formas geometricas.</p>
 
-          <a class="btn btn-dark" target="_blank" id="buyButtonVoronoi">Agregar al carrito</a>
+          <a class="btn btn-dark btnCarrito" target="_blank" id="buyButtonVoronoi">Agregar al carrito</a>
 
           <small id="alertCarritoVoronoi"></small>
 
@@ -386,6 +394,22 @@
 
 
     </section>
+
+    <div class="container" id="carrito">
+      <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Precio:</th>
+              <th scope="col">Anillo:</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
 
 
   </main>
